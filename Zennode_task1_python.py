@@ -27,11 +27,11 @@ if total_amount > 200:
 # Checking each product quantity to apply bulk_5_discount
 bulk_5_discount_a, bulk_5_discount_b, bulk_5_discount_c = 0, 0, 0
 if quantity_a > 10:
-    bulk_5_discount_a = total_amount_a * 0.05 *20
+    bulk_5_discount_a = total_amount_a * 0.05 
 if quantity_b > 10:
-    bulk_5_discount_b = total_amount_b * 0.05 *40
+    bulk_5_discount_b = total_amount_b * 0.05 
 if quantity_c > 10:
-    bulk_5_discount_c = total_amount_c * 0.05 *50
+    bulk_5_discount_c = total_amount_c * 0.05
 bulk_5_discount = bulk_5_discount_a + bulk_5_discount_b + bulk_5_discount_c
 
 # checking total cart quantity to apply bulk_10_discount
@@ -44,15 +44,15 @@ tiered_50_discount_a,tiered_50_discount_b,tiered_50_discount_c = 0, 0, 0
 total_quantity = quantity_a + quantity_b + quantity_c
 if total_quantity > 30 and quantity_a > 15:
     discountable_a = quantity_a-15
-    tiered_50_discount_a = discountable_a*0.5
+    tiered_50_discount_a = discountable_a*0.5*20
 
 if total_quantity > 30 and quantity_b > 15:
     discountable_b = quantity_b-15
-    tiered_50_discount_b = discountable_b*0.5
+    tiered_50_discount_b = discountable_b*0.5*40
 
 if total_quantity > 30 and quantity_c > 15:
     discountable_c = quantity_c-15
-    tiered_50_discount_c = discountable_c*0.5
+    tiered_50_discount_c = discountable_c*0.5*50
 tiered_50_discount = tiered_50_discount_a+tiered_50_discount_b+tiered_50_discount_c
 
 # Selecting the most profitable discount for customer
