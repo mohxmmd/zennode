@@ -51,15 +51,15 @@ let tiered_50_discountC = 0;;
 let totalQuantity = quantityA + quantityB + quantityC;
 if (totalQuantity > 30 && quantityA > 15){
     let discountableA = quantityA - 15;
-    tiered_50_discountA = discountableA*0.5;
+    tiered_50_discountA = discountableA*0.5*20;
 }
 if (totalQuantity > 30 && quantityB > 15){
     let discountableB = quantityB - 15;
-    tiered_50_discountB= discountableB*0.5;
+    tiered_50_discountB= discountableB*0.5*40;
 }
 if (totalQuantity > 30 && quantityC > 15){
     let discountableC = quantityC - 15;
-    tiered_50_discountC = discountableC * 0.5;
+    tiered_50_discountC = discountableC * 0.5*50;
 }
 let tiered_50_discount = tiered_50_discountA + tiered_50_discountB + tiered_50_discountC;
 
