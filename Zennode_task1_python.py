@@ -24,14 +24,14 @@ flat_10_discount = 0
 if total_amount > 200:
     flat_10_discount = 10
 
-# checking each product quantity to apply bulk_5_discount
+# Checking each product quantity to apply bulk_5_discount
 bulk_5_discount_a, bulk_5_discount_b, bulk_5_discount_c = 0, 0, 0
 if quantity_a > 10:
-    bulk_5_discount_a = total_amount_a * 0.05
+    bulk_5_discount_a = total_amount_a * 0.05 *20
 if quantity_b > 10:
-    bulk_5_discount_b = total_amount_b * 0.05
+    bulk_5_discount_b = total_amount_b * 0.05 *40
 if quantity_c > 10:
-    bulk_5_discount_c = total_amount_c * 0.05
+    bulk_5_discount_c = total_amount_c * 0.05 *50
 bulk_5_discount = bulk_5_discount_a + bulk_5_discount_b + bulk_5_discount_c
 
 # checking total cart quantity to apply bulk_10_discount
